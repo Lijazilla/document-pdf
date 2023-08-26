@@ -5,7 +5,7 @@ import HorizontalVerticalMenu from '../horizontalVerticalMenu/horizontalVertical
 import ImagesMenu from '../imagesMenu/imagesMenu';
 import ConfirmPreferences from '../confirmPreferences/confirmPreferences';
 import { FaHome } from 'react-icons/fa';
-// import { Link, useNavigate } from 'react-router-dom';
+
 
 
 
@@ -14,11 +14,7 @@ const NavBar = ({ handleConfirmPreferences, handleDownload }) => {
     const [isImagesMenuVisible, setImagesMenuVisible] = useState(false);
     const [selectedOrientationNavbar, setSelectedOrientationNavbar] = useState('');
     const [selectedImageNavbar, setSelectedImageNavbar] = useState(null);
-    // const navigate = useNavigate();
-
-    // const handleHomeButton = () =>{
-    //     navigate('/');
-    // }
+    
 
     const toggleMenu = () => {
         setMenuVisible(!isMenuVisible);
@@ -48,11 +44,8 @@ const NavBar = ({ handleConfirmPreferences, handleDownload }) => {
         <div className="navbar">
         <div className="first-menu">
             <div className="app-logo">
-            {/* <Link to="/">Ir a Home</Link> */}
             </div>
-            {/* <div className='home-icon'>
-            <FaHome onClick={handleHomeButton} size={30}/>
-            </div> */}
+            
 
             <div className="menu-selectors">
             <button className="orientation" onClick={toggleMenu}>
