@@ -1,16 +1,14 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // Quita BrowserRouter aquí
 import LandingPage from "./index-Landing";
 import App from "./App";
 
 function MainRouter() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/app" element={<App />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/app" element={<App />} index/>
+        </Routes>
     );
 }
 
