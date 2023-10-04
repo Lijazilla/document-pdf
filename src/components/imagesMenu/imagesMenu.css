@@ -16,7 +16,7 @@
     --lg: 18px;
     --tl: 24px;
 }
-@media screen and (min-width: 990px){
+@media screen and (max-width: 1280px){
 .inactive{
     display: none;
 }
@@ -35,7 +35,7 @@
     top: 26.5px;
     z-index: 1;
     list-style: none;
-    left: 19.3%;
+    left: 22%;
     z-index: 3;
     border: black solid 1px;
     border-radius: 0 0 15px 15px;
