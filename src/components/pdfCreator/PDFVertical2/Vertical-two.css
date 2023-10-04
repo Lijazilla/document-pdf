@@ -27,7 +27,32 @@
     margin: 0;
     padding: 0;
 }
-
+.reset-button-one{
+    background-color: var(--black-grey);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    height: 25px;
+    margin-top: 5px;
+}
+.download-button-one {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    height: 25px;
+    width: 110px;
+    margin-top: 4px;
+}
+.preview-button-for-vertical-two{
+    background-color: var(--black-grey);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    height: 25px;
+    margin-top: 5px;
+    font-size: small;
+}
 .container-one{
     background-color: rgb(249, 249, 249);
     position: absolute;
@@ -35,7 +60,7 @@
     height: 100%;
     padding: 0;
     left: 50%;
-    top: 56%;
+    top: 58%;
     transform: translate(-50%,-50%);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     border: var(--black) .5px solid;
@@ -59,7 +84,6 @@
     align-items: center;
     margin-top: 12px;
 }
-
 .custom-file-upload-one{
     text-align: center;
     position: relative;
@@ -93,7 +117,6 @@
     left: 17%;
     top: 1%;
 }
-
 .date-input-one{
     position: relative;
     margin-top: 20px;
@@ -105,7 +128,6 @@
     right: 2%;
     z-index: 3;
 }
-
 .title-input-one{
     position: relative;
     margin: 0;
@@ -177,6 +199,7 @@
     box-sizing: border-box;
     padding: 0;
     object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 #cancel-image-one{
     position: absolute;
@@ -208,6 +231,7 @@
     border: none;
     background: var(--plate);
     border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .description-text-two{
     position: relative;
@@ -216,6 +240,7 @@
     border: none;
     background: var(--plate);
     border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 #cancel-description-1-one{
     position: absolute;
@@ -232,7 +257,7 @@
     margin: 0;
     padding: 0;
     left: 1%;
-    top: 15%;
+    top: 13%;
 }
 .contacto{
     width: 80%;
@@ -254,46 +279,7 @@
     width: 99.9%;
     height: 5%;
 }
-.reset-button-one{
-    background-color: var(--black-grey);
-    color: var(--white);
-    border-radius: 12px;
-    border: none;
-    height: 25px;
-    margin-top: 5px;
-}
-.preview-button{
-    background-color: var(--black-grey);
-    color: var(--white);
-    border-radius: 12px;
-    border: none;
-    height: 25px;
-    margin-top: 5px;
-    font-size: x-small;
-}
-.watermark-button{
-    background-color: var(--black-grey);
-    color: var(--white);
-    border-radius: 12px;
-    border: none;
-    height: 25px;
-    margin-top: 5px;
-    font-size: x-small;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-}
-.download-button-one {
-    background-color: var(--red);
-    color: var(--white);
-    border-radius: 12px;
-    border: none;
-    height: 25px;
-    width: 110px;
-    margin-top: 4px;
-}
+
 .cancel-button-for-vertical-one{
     color: white;
     border:var(--black) solid 1px;
@@ -310,6 +296,7 @@
     border: none;
     border-radius: 8px;
     background: var(--plate);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Mobile */
@@ -328,6 +315,9 @@
         border-radius: 8px;
     }
     .erase-download-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
     }
     .reset-button-one{
@@ -336,6 +326,15 @@
         border-radius: 12px;
         border: none;
         height: 20px;
+    }
+    .preview-button-for-vertical-two{
+        background-color: var(--black-grey);
+        color: var(--white);
+        border-radius: 12px;
+        border: none;
+        height: 3.07vh;
+        margin-top: 0px;
+        font-size: x-small;
     }
     .download-button-one {
         background-color: var(--red);
@@ -378,10 +377,10 @@
         position: relative;
         display: flex;
         width: 100%;
-        height: 40vh;
+        height: 30vh;
         justify-content: space-around;
         border: none;
-        top: 3%;
+        top: 5%;
     }
     .image-for-vertical-two{
         position: relative;
@@ -395,7 +394,7 @@
         width: 100%;
         height: auto;
         margin-right: 7%;
-        top: 5%;
+        top: 7%;
     }
     .description-text-one{
         width: 35%;
@@ -464,10 +463,12 @@
         border: none;
         border-radius: 8px;
         background: var(--plate);
+        margin-top: 18%;
     }
     #cancel-contact-one-vertical{
         position: absolute;
         right: -5%;
         z-index: 2;
+        top: 45%;
     }
     }

@@ -125,38 +125,17 @@ const CreatePDFVertical1 = () => {
 
     return (
         <section className="container-one">
-            
 
             <div className='erase-download-buttons'>
                 <button className="reset-button-one" onClick={handleResetForm}>Reset</button>
-                <input type="file" id="watermark-upload" accept="image/*" onChange={handleWaterMarkImageChange} style={{ display: 'none' }} />
-                        <label htmlFor="watermark-upload" className="watermark-button">
-                            {formData.waterMark ? (
-                                <span>
-                                    <FontAwesomeIcon icon={faCheck} className='icon-for-watermark' /> {' '}
-                                    <span className="image-title" style={{ fontSize: 'x-small' }}>
-                                        Marca lista
-                                    </span>
-                                </span>
-                            ) : (
-                                <span>
-                                    Marca de agua
-                                </span>
-                            )}
-                        </label>
-                        <button className="preview-button" onClick={() => setShowPreview(!showPreview)}>
-                            {showPreview ? 'Cerrar Previa' : 'Vista Previa'}
-                        </button>
 
-                {/* <button className="add-page-button" onClick={handleAddPage}>Agregar Página</button> */}
+                <button className="preview-button-for-vertical-one" onClick={() => setShowPreview(!showPreview)}>
+                    {showPreview ? 'Cerrar Previa' : 'Vista Previa'}
+                </button>
+
                 <button className="download-button-one" onClick={handleDownload}>Descargar PDF</button>
-                {/* <div className="total-pages">
-                    <p>Páginas totales: {pagesData.length}</p>
-                </div> */}
             </div>
-            {/* <div className="page-indicator">
-                <p>Página {currentPage}</p>
-            </div> */}
+
             <div className="upper-container-one">
             
                 <div className="logo-input-one">

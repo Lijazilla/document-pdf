@@ -2,8 +2,6 @@
 import React from 'react';
 import { Document, Page, Text, View, Image, StyleSheet, Font, pdf } from '@react-pdf/renderer';
 import { parseISO, format } from 'date-fns';
-import pica from 'pica';
-
 
 const fecha = '2023-07-22'; // Ejemplo de una fecha en formato ISO (AAAA-MM-DD)
 const fechaValida = parseISO(fecha);
@@ -94,17 +92,12 @@ const styles = StyleSheet.create({
     transform: 'translate(-50%, -50%)',
     opacity: 0.5,
 },
-
 });
-
-
 
 const ReactPDFVertical1 = ({ data }) => {
     const formattedDate = data.fecha ? format(parseISO(data.fecha), 'dd MMMM yyyy') : '';
 
-    
     return (
-        
         <Document>
             <Page size="A4" style={styles.page}>
                 {data.waterMark && (
@@ -113,11 +106,11 @@ const ReactPDFVertical1 = ({ data }) => {
                     </View>
                 )}
                 <View style={styles.container}>
-                {data.logo &&
-                    (<View style={styles.logo}>
-                    <Image src={data.logo}/>
-                    </View>)}
-                <Text style={styles.date}>{formattedDate}</Text>
+                  {data.logo &&
+                      (<View style={styles.logo}>
+                      <Image src={data.logo}/>
+                      </View>)}
+                  <Text style={styles.date}>{formattedDate}</Text>
                 </View>
                 <Text style={styles.title}>{data.titulo}</Text>
                 <Text style={styles.text}>{data.texto}</Text>

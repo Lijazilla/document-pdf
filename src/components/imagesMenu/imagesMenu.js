@@ -31,18 +31,6 @@ function ImagesMenu({ handleImageOptionSelected }) {
             <li id="uno" onClick={() => handleImageOptionClick(3)} className={imageSelectedOption === 3 ? 'active' : ''}>
                 3
             </li>
-
-            <li id="uno" onClick={() => handleImageOptionClick(4)} className={imageSelectedOption === 4 ? 'active' : ''}>
-                4
-            </li>
-
-            <li id="uno" onClick={() => handleImageOptionClick(5)} className={imageSelectedOption === 5 ? 'active' : ''}>
-                5
-            </li>
-
-            <li id="uno" onClick={() => handleImageOptionClick(6)} className={imageSelectedOption === 6 ? 'active' : ''}>
-                6
-            </li>
         </div>
     );
 }

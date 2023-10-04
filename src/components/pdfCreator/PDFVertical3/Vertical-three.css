@@ -1,5 +1,3 @@
-
-
 :root {
     --white: #EEEEEE; /*Nuevo*/
     --plate: #e9e9e9;
@@ -26,7 +24,32 @@
     margin: 0;
     padding: 0;
 }
-
+.reset-button-one{
+    background-color: var(--black-grey);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    height: 25px;
+    margin-top: 5px;
+}
+.download-button-one {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    height: 25px;
+    width: 110px;
+    margin-top: 4px;
+}
+.preview-button-for-vertical-three{
+    background-color: var(--black-grey);
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    height: 25px;
+    margin-top: 5px;
+    font-size: small;
+}
 .container-one{
     background-color: rgb(249, 249, 249);
     position: absolute;
@@ -58,7 +81,6 @@
     align-items: center;
     margin-top: 12px;
 }
-
 .custom-file-upload-one{
     text-align: center;
     position: relative;
@@ -92,7 +114,6 @@
     left: 17%;
     top: 1%;
 }
-
 .date-input-one{
     position: relative;
     margin-top: 20px;
@@ -104,7 +125,6 @@
     right: 2%;
     z-index: 3;
 }
-
 .title-input-one{
     position: relative;
     margin: 0;
@@ -152,10 +172,10 @@
     top: 4%;
     z-index: 3;
 }
-.container-image-vertical-one{
+.container-image-vertical-three{
     position: relative;
     display: flex;
-    margin-top: 2%;
+    margin-top: 2.5%;
     width: 100%;
     height: 25%;
     justify-content: space-around;
@@ -185,8 +205,8 @@
     box-sizing: border-box;
     padding: 0;
     object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-
 #cancel-image-one{
     position: absolute;
     margin-top: 0%;
@@ -250,7 +270,7 @@
     position: absolute;
     right: 33%;
 }
-.contact-input-one{
+.contact-input-three{
     position: relative;
     display: flex;
     width: 90%;
@@ -265,6 +285,7 @@
     border: none;
     border-radius: 8px;
     background: var(--plate);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 #cancel-contact-three-vertical{
     position: absolute;
@@ -279,23 +300,6 @@
     width: 99.9%;
     height: 5%;
 }
-.reset-button-one{
-    background-color: var(--black-grey);
-    color: var(--white);
-    border-radius: 12px;
-    border: none;
-    height: 25px;
-    margin-top: 5px;
-}
-.download-button-one {
-    background-color: var(--red);
-    color: var(--white);
-    border-radius: 12px;
-    border: none;
-    height: 25px;
-    width: 110px;
-    margin-top: 4px;
-}
 .cancel-button-for-vertical-one{
     color: white;
     border:var(--black) solid 1px;
@@ -308,7 +312,7 @@
 }
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 415px) {
+@media screen and (max-width: 720px) {
     .container-one{
         background-color: rgb(249, 249, 249);
         position: absolute;
@@ -323,6 +327,9 @@
         border-radius: 8px;
     }
     .erase-download-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
     }
     .reset-button-one{
@@ -332,6 +339,15 @@
         border: none;
         height: 20px;
         margin-top: 0%;
+    }
+    .preview-button-for-vertical-three{
+        background-color: var(--black-grey);
+        color: var(--white);
+        border-radius: 12px;
+        border: none;
+        height: 3.07vh;
+        margin-top: 0px;
+        font-size: x-small;
     }
     .download-button-one {
         background-color: var(--red);
@@ -352,7 +368,6 @@
         top: 0;
         margin-top: 0;
         height: 100%;
-
     }
     .custom-file-upload-one{
         font-size: .6em;
@@ -457,14 +472,14 @@
         position: absolute;
         right: 25%;
     }
-    .contact-input-one{
+    .contact-input-three{
         position: relative;
         display: flex;
         width: 90%;
         margin: 0;
         padding: 0;
         left: 1%;
-        top: 1%
+        top: 0%;
     }
     .contacto{
         width: 95%;

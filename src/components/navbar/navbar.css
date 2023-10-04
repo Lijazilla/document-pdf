@@ -1,42 +1,43 @@
-/*navbar.css*/
-
 :root {
-    --white: #EEEEEE; /*Nuevo*/
+    --white: #EEEEEE;
     --plate: #e9e9e9;
-    --red: #D72323;/*Nuevo*/
+    --red: #D72323;
     --gray-blue: #fefefe;
-    --dark-grey: #3A4750;/*Nuevo*/
-    --black-grey: #303841;/*Nuevo*/
+    --dark-grey: #3A4750;
+    --black-grey: #303841;
     --black: #000;
     --blue-green: #1A4645;
-    --blue: #266867;
     --orange: #F58800;
-    --yellow: #F88C24;
-    --gray: #6f6e6e;
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
     --tl: 24px;
 }
-.home-icon{
-    display: none;
-}
 .inactive {
     display: none;
 }
-.horizontal-vertical-menu.active {
-    display: block;
+.navbar{
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: absolute;
 }
 .navbar button {
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Agrega transform 0.3s */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 .navbar button:hover{
     background-color: var(--red);
     color: var(--white)
 }
 .menu-selectors{
-    margin-right: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 100%;
 }
 .navbar {
     width: 100%;
@@ -60,50 +61,26 @@
     margin: 0;
     padding: 0;
 }
-.second-menu {
-    width: 100%;
-    height: 30px;
+.br-for-mobile{
+    display: none;
+}
+.instructions{
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    place-content: space-evenly;
-    overflow: visible;
-}
-.app-logo {
-    position: relative;
-    margin: 0;
-    height: 30px;
-    object-fit: cover;
-    width: 50px;
-}
-
-.logo {
-    position: relative;
-    width: 100%;
-    height: 30px;
-}
-.menu-selectors{
-    width: 63%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 60%;
     height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+    left: 1%;
 }
-
-.orientation {
-    border: 0;
-    background-color: var(--blue-green);
-    color: var(--white);
-    border-radius: 10px;
-    height: 25px;
-    width: 75px;
+.text-instructions{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
     padding: 0;
     margin: 0;
 }
-
 .images-selector {
     background-color: var(--blue-green);
     color: var(--white);
@@ -113,7 +90,6 @@
     margin: 0;
     justify-content: center;
 }
-
 .confirm-preferences {
     border: 0;
     background-color: var(--blue);
@@ -121,38 +97,6 @@
     border-radius: 10px;
     height: 25px;
     box-sizing: border-box;
-}
-
-.rightbar {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100px;
-}
-
-#usuario {
-    position: relative;
-    border: 0;
-    margin-right: 5px;
-    background-color: var(--blue-green);
-    color: var(--white);
-    height: 25px;
-    width: 40px;
-    border-radius: 8px;
-    margin-right: 2px;
-}
-
-#logout {
-    position: relative;
-    border: 0;
-    background-color: var(--blue-green);
-    color: var(--white);
-    height: 25px;
-    width: 50px;
-    margin-right:0px;
-    border-radius: 8px;
 }
 .agregar-pagina{
     background-color: var(--blue-green);
@@ -172,30 +116,39 @@
 }
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 414px) {
+@media screen and (max-width: 720px) {
     .navbar{
         background-color: var(--dark-grey);
+        left: 0;
+        top: 0;
     }
     .first-menu{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .menu-selectors{
         align-items: center;
+        width: 40%;
+        justify-content: space-around;
+    }
+    .instructions{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
         width: 60%;
+        height: 100%;
+        margin-top: 2%;
+        left: 1%;
     }
-    .app-logo {
-        background-color: none;
-        display: none;
-        position: absolute;
-        width: 30px;
-    }
-    .home-icon{
-        display: initial;
+    .text-instructions{
         color: white;
-        width: 30px;
+        font-size: 11px;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
     }
     .orientation{
         border: 0;
@@ -215,7 +168,7 @@
         color: var(--gray);
         border-radius: 10px;
         width: 66px;
-        height: 20px;
+        height: 25px;
         margin: 0;
         padding: 0;
         justify-content: center;
@@ -238,29 +191,6 @@
         font-size: .6em;
         font-weight: bold;
         font-family: 'Lucida Sans';
-    }
-    #usuario {
-        position: relative;
-        align-items: center;
-        border: 0;
-        margin-right: 5px;
-        background-color: var(--white);
-        color: var(--gray);
-        height: 20px;
-        width: 40px;
-        border-radius: 8px;
-        margin-right: 2px;
-        font-size: .6em;
-    }
-    #logout {
-        position: relative;
-        border: 0;
-        background-color: var(--white);
-        color: var(--gray);
-        height: 20px;
-        width: 50px;
-        margin-right:0px;
-        border-radius: 8px;
-        font-size: .6em;
+        margin-bottom: 7%;
     }
 }
