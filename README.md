@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Document PDF Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://lijazilla.github.io/document-pdf/build
 
-## Available Scripts
+Welcome to the Document PDF Generator, an application that allows you to create custom PDF reports directly from your web browser. This versatile tool enables you to add a logo, date, title, text, select up to three images for your project, provide image descriptions, and include contact information. Once your document is ready, you can download it as a PDF.
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+This project was developed using JavaScript, React, HTML, CSS, and leverages the ReactPDF library for PDF generation. It also uses the `saveAs` function from the `file-saver` library to enable PDF downloads. The application is hosted on GitHub Pages, making it accessible through a web browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To use the Document PDF Generator, follow these simple steps:
 
-### `npm test`
+1. Click the "#Images" button.
+2. Select the desired number of images for your document.
+3. Click the "Confirm Preferences" button.
+4. Fill in the form with the necessary information.
+5. Optionally, click the "Preview" button to review your document.
+6. Finally, click the "Download PDF" button to obtain your customized PDF report.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There is no need to install anything; you can access the tool directly on GitHub Pages.
 
-### `npm run build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is protected under the MIT License with the following additional restrictions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- You are not permitted to use this project for commercial purposes.
+- You are not allowed to distribute or sublicense this project or any modified versions of it.
+- Any derivative works or projects that use substantial portions of this codebase must obtain explicit permission from the project author.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For full details, please review the [LICENSE](LICENSE) file.
 
-### `npm run eject`
+## Author
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Author: [Manuel Alejandro Jiménez Fuentes](https://github.com/Lijazilla)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Protection
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is protected to ensure its proper usage and protect the author's rights. Unauthorized use or distribution of this project or its components is prohibited.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgments
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Special thanks to the [ReactPDF](https://react-pdf.org/) library for making PDF generation a breeze.
+- Credits to [file-saver](https://github.com/eligrey/FileSaver.js) for simplifying the process of saving files from the web.
